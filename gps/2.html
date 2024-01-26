@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <link rel="stylesheet" href="push.css">
+      <meta charset="UTF-8">
+      <title>Document</title>
+   </head>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+            $(this).keydown(function(eventObject){
+               if (eventObject.which == 27) //буква ESC
+               {
+                     cef.hide(true); 
+                     cef.set_focus(false); 
+               }
+                  
+            });
+            function gps_2_1()
+            {
+               cef.emit("gps_2_1","gps_2_1")
+               cef.hide(true); 
+               cef.set_focus(false); 
+            }
+            function gps_2_2()
+            {
+               cef.emit("gps_2_2","gps_2_2")
+               cef.hide(true); 
+               cef.set_focus(false); 
+            }
+   </script>
+
+   <body>
+      <div class="lsc" style="margin-left: 753px;margin-top: 113px;border-radius: 10px;"><img src="gps.png" style="
+    margin-top: 10px;
+    margin-left: 125px;
+"></div>
+
+      <div class="l1" style="margin-left: 758px;margin-top: -510px;border-radius: 10px;"><button class="b1" style="
+    margin-left: 151px;
+    border: 0px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    font-size: 30px;
+    margin-top: 5px;
+" onclick="gps_2_1();">ФСБ</button></div>
+
+    <div class="l2" style="
+    margin-top: 9px;
+    margin-left: 758px;
+    border-radius: 10px;
+"><button style="
+    margin-left: 151px;
+    border: 0px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    font-size: 30px;
+    margin-top: 5px;
+" onclick="gps_2_2();">ППС</button></div>
+
+   
+</body>
+</html>

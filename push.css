@@ -1,0 +1,34 @@
+.lsc {
+   background-color: #757575;
+   width: 395px;
+   height: 589px;
+   box-sizing: border-box;
+}
+
+.l1 {
+   background-color: #e0e0e0;
+   width: 385px;
+   height: 50px;
+   box-sizing: border-box;
+   border: 0px;
+
+}
+
+.l2 {
+   background-color: #e0e0e0;
+   width: 385px;
+   height: 50px;
+   box-sizing: border-box;
+   border: 0px;
+
+}
+
+.l1:hover
+{
+   background-color: #FFAB00;
+}
+
+.l2:hover
+{
+   background-color: #FFAB00;
+}
